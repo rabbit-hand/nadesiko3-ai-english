@@ -1,302 +1,32 @@
-# 日本語プログラミング言語「なでしこ3」 - AI魔改造版
+# Japanese Programming Language "Nadesiko3" - AI-Enhanced Edition
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
-[![npm version](https://badge.fury.io/js/nadesiko3-ai.svg)](https://www.npmjs.com/package/nadesiko3-ai)
-[![AI Enhanced](https://img.shields.io/badge/AI-Enhanced-purple.svg?style=flat)](https://github.com/rabbit-hand/nadesiko3ai)
-[![Install](https://img.shields.io/badge/Install-Now-brightgreen.svg?style=flat)](#インストール)
+An unofficial, AI-extended distribution of "Nadesiko3", supercharged for Artificial Intelligence, Data Science, Autonomous Drone Control, and Smart Home (IoT) Automation. 
 
-## 「なでしこ3」とは - AI魔改造版
+---
 
-**これはAIで魔改造したものです！**
+## 🚀 Key Features
 
-「なでしこ3」とは、日本語のプログラミング言語です。JavaScript/TypeScriptをベースとしているので、PC/スマホ/タブレットなど、幅広い環境で動きます。日本語プログラミング言語は、読みやすく理解しやすいのが特徴で、初めてでも楽しくプログラミングを覚えることができます。
+### 🧠 Advanced AI & Data Science
+- **Python-Level Analytics:** Write complex machine learning, deep learning, and data science logic using simple, high-level syntax.
+- **Smart Analytics:** Built-in support for Natural Language Processing (NLP) and time-series anomaly detection.
 
-**🚀 AI魔改造版の特徴:**
-- Pythonレベルの高度な機能を完全実装
-- データサイエンス・機械学習・深層学習機能
-- 自然言語処理・時系列分析機能
-- IoTハードウェア制御・Web API連携機能
-- 🌍 **多言語対応**: 英語プログラミング・子供向け簡単言語モード
-- 🎈 **子供が泣かない**: 動物の鳴き声・絵文字・楽しいコマンド
-- 🔧 **ハードウェア自動検出**: センサー・モーター・車輪数を自動的に発見
-- 🤖 **簡単ロボット制御**: センサー番号不要・モーターID不要で簡単操作
-- 🚁 **ドローン高度センサー**: ジャイロ・GPS・モーター回転数・高度計を自動検出
-- 📡 **完全センサースイート**: 加速度・地磁気・気圧・コンパスを完全サポート
-- 📷 **複数カメラ対応**: 前面・下面・背面・側面カメラを自動検出
-- 🚧 **自動障害物回避**: カメラで障害物を検出し自動で回避
-- 👤 **目標追跡機能**: 人・車両・建物などを自動検出・追跡
-- 📡 **レーダーシステム**: 周囲の航空機・鳥・障害物を検出
-- 👥 **人感センサー**: 多方向から人間を感知・検出
-- 🛡️ **衝突防止システム**: 複合的なリスク評価で自動防止
-- 👨‍👩‍👧‍👦 **家族安心機能**: 帰宅検出・人数確認・スマホ通知
-- 🚗 **道路センサー**: 交通量・速度・渋滞を監視
-- 💧 **水位検出**: 河川・排水溝の水位を監視・洪水警報
-- 🌍 **環境監視**: 天気・空気質・騒音を総合監視
-- 📱 **API送信**: パソコン・スマホに自動データ送信
-- 🖥️ **サーバー連携**: データ集中管理・遠隔監視
-- ⏰ **スケジューラー**: 曜日・時間指定で自動実行
-- 🚨 **緊急停止**: ですぐに全スケジュールを停止
-- 🔄 **システム制御**: 停止・再開で完全な制御
-- 📝 **Office連携**: Microsoft Office・LibreOfficeに完全対応
-- 🏷️ **RFID・NFCタグ**: 自動タグ読み取り・生徒ID認識
-- 👨‍🎓 **生徒ID自動登録**: タグ読み取りで自動出席・成績管理
-- 🚁 **ドローン自動飛行**: 座標設定で任意の場所へ自動飛行
-- 📍 **目的地自動飛行**: 指定目的地への完全自動操縦
-- 🛩️ **航路計画**: 最適ルート計算・ウェイポイント生成
-- 🌡️ **温度計測**: 温度・体温・気温の精密計測
-- 💨 **風量計測**: 風速・風向のリアルタイム計測
-- 🌡️ **気象観測**: 天気・湿度・気圧の総合監視
-- 🔋 **バッテリー監視**: ドローンバッテリー残量リアルタイム監視
-- 🏠 **自動帰還システム**: バッテリー切れ防止の自動帰還
-- 🚨 **緊急帰還**: 危険時の即時安全帰還
-- ⛽ **燃料監視**: ガソリン・水素・ディーゼル・電気・ハイブリッド監視
-- 🚗 **補給所検索**: 最適な燃料補給所の自動検索
-- 🗺️ **最適ルート計画**: 燃料効率を考慮したルート計画
-- 🌀 **ドローン姿勢安定化**: ジャイロ・加速度・地磁気センサーによる完全姿勢制御
-- 💨 **突風検出・自動補正**: 突風・急傾斜検出と即時安定化復帰
-- 🏔️ **地形追従・進路維持**: 地形に合わせた自動高度調整とルート逸脱防止
-- 🌐 **ブラウザ機能拡張**: UIコンポーネント・Canvas描画・アニメーション
-- 🎨 **Webインターフェース強化**: レスポンシブデザイン・アクセシビリティ対応
-- 📊 **リアルタイム可視化**: Webベースデータ分析・パフォーマンス監視
-- 🚁 **GPSなしドローンナビゲーション**: SLAM・ビジュアルオドメトリ・IMU統合・障害物回避
-- 教育・研究・実務で活用できる究極の日本語プログラミング言語
+### 🚁 Autonomous Drone Control & Sensors
+- **Full Sensor Suite:** Real-time integration with Gyro, GPS, Motor RPM, Altimeter, Accelerometer, and Compass.
+- **Vision & Navigation:** Multi-camera auto-detection (front, bottom, side) with visual tracking and autonomous obstacle avoidance.
+- **Flight Planning:** Intelligent pathfinding, waypoint generation, and automatic "Return-to-Home" (RTH) on low battery or signal loss.
 
-- [なでしこのWebサイト](https://nadesi.com/)
-- [マニュアル](https://nadesi.com/v3/doc/)
-- **🌍 English Documentation**: [README_EN.md](README_EN.md) - Complete English guide
-- **📚 Multilingual Guide**: [README_MULTILANG.md](README_MULTILANG.md) - English & kid-friendly features
+### 🏠 Smart Home Automation & Geofencing
+- **Geofenced Security:** Live distance calculation between your smartphone GPS and home for automated smart locks.
+- **Pre-arrival Activation:** Automatically triggers the air conditioner or heating systems based on your distance from home.
+- **Environmental Monitoring:** Seamlessly tracks indoor air quality (PM2.5/CO2), temperature, and humidity for automated ventilation.
+- **NFC/RFID Integration:** Quick actions (e.g., "Leaving Home" or "Bedtime Mode") triggered by scanning simple NFC tags.
 
-はじめて「なでしこ」に挑戦する方は、次のチュートリアルから始めることをオススメします。日本語プログラミング言語の雰囲気が容易に理解できます。
+---
 
-- [チュートリアル](https://nadesi.com/v3/doc/go.php?997)
+## 🛠️ Installation
 
-## 対応機器/ブラウザ
+### Method 1: One-Liner Installer (Recommended)
 
-なでしこ3は、内部的にJavaScriptに変換されて実行されます。そのため、JavaScriptが動作するさまざまな端末で実行できます。
-
-1. Webブラウザ(wnako) - 主要ブラウザ(Chrome/Safari/Edge/Firefox)に対応し、PC/スマートフォンで動作
-2. コマンドライン(cnako) - JavaScriptの実行エンジン「Node.js」上で動作
-3. 配付パッケージ - Electronを利用してローカルPC上で動作
-
-具体的な対応ブラウザについて詳しくは、[対応機器/ブラウザ](doc/browsers.md) をご覧ください。Node.jsの対応バージョンは、v20以上です。
-
-## ブラウザで利用する方法
-
-次のWebエディタ上で、なでしこを実行できます。ブラウザがあれば動作します。
-
-- [なでしこ3貯蔵庫(プログラム一覧)](https://n3s.nadesi.com/)
-- [なでしこ3簡易エディタ](https://nadesi.com/v3/start)
-
-## なでしこ3をインストールする方法
-
-なでしこ3をインストールして動かす方法は下記にまとめています。
-
-- [なでしこマニュアル > FAQ/なでしこ3をインストールして使うには？](https://nadesi.com/v3/doc/go.php?3907)
-
-## 🚀 インストール
-
-### 方法1: ワンライナーインストール（推奨）
-
-**Linux/macOS:**
+**Linux / macOS:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/rabbit-hand/nadesiko3ai/main/install.sh | bash
-```
-
-**Windows:**
-```cmd
-curl -fsSL https://raw.githubusercontent.com/rabbit-hand/nadesiko3ai/main/install.bat > install.bat && install.bat
-```
-
-### 方法2: npmでグローバルインストール
-
-```bash
-npm install -g nadesiko3-ai
-```
-
-### 方法3: GitHubからクローン
-
-```bash
-git clone https://github.com/rabbit-hand/nadesiko3ai.git
-cd nadesiko3ai
-npm install
-npm run build
-```
-
-### 方法4: 直接ダウンロード
-
-1. [GitHubリポジトリ](https://github.com/rabbit-hand/nadesiko3ai)にアクセス
-2. 「Code」→「Download ZIP」をクリック
-3. 解凍して、`npm install && npm run build` を実行
-
-## 📋 使い方
-
-インストール後、以下のコマンドが利用可能になります：
-
-```bash
-# 基本実行
-nako3-ai -e "「こんにちは、なでしこ3 AI Enhanced！😊」と表示。"
-
-# スクリプトファイル実行
-nako3-ai hello.nako3
-
-# Webサーバー起動（ポート3000）
-nako3server
-
-# エディター起動
-nako3edit
-
-# データサイエンスデモ
-nako3-ai demo/datascience_demo_manual.nako3
-```
-
-### Node.jsでなでしこ3コマンドライン版をインストール（従来版）
-
-```bash
-npm install -g nadesiko3
-```
-
-## Ubuntuへの開発環境のセットアップ
-
-まっさらなUbuntu22.04に、なでしこ3の開発環境を整える場合は次のコマンドを実行します。
-
-```sh
-sudo apt update
-# nvm で Node.js をインストール
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
-source ~/.bashrc
-nvm install v24
-nvm use v24
-# リポジトリのセットアップ
-git clone https://github.com/kujirahand/nadesiko3.git
-cd nadesiko3
-npm install
-# なでしこ3のビルド
-npm run build
-```
-
-## 追加インストール(macOS/Linux)
-
-必要に応じて次のコマンドをインストールします。
-
-macOS:
-
-```sh
-# 『圧縮』『解凍』命令のために
-brew install p7zip
-```
-
-Ubuntu/Debian:
-
-```sh
-# 『圧縮』『解凍』命令のために
-sudo apt install p7zip-full
-# 『キー送信』命令のために
-sudo apt install xdotool
-```
-
-全てのコマンドが正しく動くかを確認するには、次のコマンドを実行します。
-
-```sh
-npm test
-```
-
-ブラウザ系テストについては、[doc/browser-tests.md](doc/browser-tests.md) を参照してください。
-
-## コマンドライン版なでしこをインストールして使えるコマンド
-
-ローカルPCになでしこをインストールしたら、次のコマンドを実行して、ブラウザで動作するエディタを起動できます。
-
-```sh
-# なでしこエディタ(WEB版)のサーバーを起動
-npm start
-# なでしこエディタ(PC版)を起動
-npm run nako3edit
-```
-
-## Colabでなでしこを使って作業をする場合
-
-以下にColabを使ってなでしこを使う場合の作業用テンプレートを用意しました。
-ノートを複製して自分の作業に利用できます。
-
-- [作業用テンプレート](https://colab.research.google.com/drive/1FmOIoJGeFP57C9fgZXCP5pvcVJ6HmvH4?usp=sharing)
-
-## Colabでビルドテスト
-
-Google Colabでなでしこのビルドテストできます。
-
-- [ノートブック](https://colab.research.google.com/drive/1a-Choj3tCBCA1R7x7vPdNQN48vGzBd7E?usp=sharing)
-
-## なでしこの開発履歴
-
-日本語プログラミング言語「なでしこ」の開発は2004年にはじまりました。その後、何度も作り直しを行って、現在の「なでしこ3」ができています。
-「なでしこ3」の開発は、2017年からコツコツと継続され、現在まで定期的にバージョンアップが続いています。
-2004年に掲げた「誰でも簡単プログラマー」の目標を実現するために開発を続けます。
-
-- (2024-07-22) v.3.6.11でcoreに分割した開発用リポジトリを再び本家に統合
-- (2024-07-04) v3.6.8で、バンドルツールを`webpack`から`esbuild`に変更(#1690)
-- (2024-05-02) v3.6.2で、プラグイン用APIを一新、なでしこの変数管理をObjectからMapに変更(#1638)
-- (2022-05-19) v3.3.18でJavaScriptからTypeScriptへ変更。言語コアを別リポジトリcoreに移動
-- (2022-04-20) v3.3.2を公開(モジュール構造をCommonJSからESModuleへ変更/非同期関数asyncFnの実装)
-- (2021-04-09) v3.2.1を公開
-- (2020-04-24) v3.1.2を公開
-- (2017-12-29) v3.0.19を公開(無名関数「には」の実装)。これ以降、[release](https://github.com/kujirahand/nadesiko3/releases)に履歴を記録
-- (2017-06-25) 内部構造を大幅に修正(PEGパーサーから独自のパーサーに変更)
-- (2017-02-13) 「なでしこ3」のプロジェクトが開始
-- (2005-02-17) 「なでしこ」の正式版が公開
-- (2004-08-01) 「ひまわり2」としてゼロから「なでしこ」の開発が開始
-- (2001-08-03) 「なでしこ」の前身「ひまわり」の開発を開始
-
-## なでしこ3の開発に参加
-
-なでしこ3自身を開発するために、開発環境を整えようという方は、 [doc/SETUP.md](doc/SETUP.md) をご覧ください。
-なでしこユーザーと開発者用のための[Discord](https://discord.com/invite/FAtjTQr3kk)があります。
-
-### プルリク大歓迎
-
-プルリクエスト大歓迎です。なでしこ3の開発に参加したい方は、次の手順に沿って作業をお願いします。
-
-1. まずGitHubのIssuesに修正したい内容や作業したい内容を書き込んでください。
-2. `git checkout -b branch_name` を実行して、ブランチを作成します。
-3. ソースコードを修正して、`git commit -a -m コメント` と `git push --set-upstream origin branch_name` コマンドを実行します。
-4. ここで、ブラウザでGitHubのなでしこのリポジトリを表示すると、画面上部に「Compare & pull request」ボタンが表示されるのでクリックして、プルリクエストを作成します。
-5. プルリクエストの画面では、何を修正したのかと、上記(1)のIssuesの番号を #1762 のように記述してください。
-6. なでしこ開発者がプルリクエストをレビューします。そして、必要な修正箇所を指摘しますので、お手数ですが修正をお願いします。
-7. 上記(3)に戻ります。修正箇所がなければ、修正がメインブランチにマージされます。
-
-現在、マスターブランチ保護のため、直接コミットを禁止しています。既にコラボレータに登録されている方も、お手数ですがプルリクエストを作成してください。
-
-## なでしこ3プラグインの開発について
-
-なでしこ3を拡張するプラグインを作るには、以下のドキュメントを参考にしてください。
-
-- [なでしこ3マニュアル > 文法/JSプラグインの作り方](https://nadesi.com/v3/doc/go.php?1161)
-- [doc/plugins](doc/plugins.md)
-
-## なでしこ関連リポジトリへのリンク
-
-- [なでしこ3開発リポジトリ(GitHub)](https://github.com/kujirahand/nadesiko3/)
-- [なでしこ3拡張プラグイン](https://nadesi.com/v3/doc/index.php?FAQ%2F%E6%8B%A1%E5%BC%B5%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&show)
-  - [nadesiko3-server](https://github.com/kujirahand/nadesiko3-server) --- Webサーバ(HTTP)
-  - [nadesiko3-websocket](https://github.com/kujirahand/nadesiko3-websocket) --- WebSocket
-  - [nadesiko3-office](https://github.com/kujirahand/nadesiko3-office) --- Excelなど
-  - [nadesiko3-sqlite3](https://github.com/kujirahand/nadesiko3-sqlite3/) --- SQLite3
-  - [nadesiko3-tools](https://github.com/kujirahand/nadesiko3-tools) --- 便利ツール
-  - [nadesiko3-mecab](https://github.com/kujirahand/nadesiko3-mecab/) --- 形態素解析(MeCab)
-  - [nadesiko3-htmlparser](https://github.com/kujirahand/nadesiko3-htmlparser) --- スクレイピング
-  - [nadesiko3-ml](https://github.com/kujirahand/nadesiko3-ml/) --- 機械学習
-  - [nadesiko3-odbc](https://github.com/kujirahand/nadesiko3-odbc) --- データベース(ODBC)
-  - [nadesiko3-mysql](https://github.com/kujirahand/nadesiko3-mysql) --- データベースMySQL
-  - [nadesiko3-postgresql](https://github.com/kujirahand/nadesiko3-postgresql) --- データベースPostgreSQL
-  - [nadesiko3-mssql](https://github.com/kujirahand/nadesiko3-mssql) --- データベースmssql
-- 配布用パッケージ
-  - [nadesiko3webkit - なでしこ3軽量配布キット(webkit版)](https://github.com/kujirahand/nadesiko3webkit)
-  - [nadesiko3electron - なでしこ3フル配布キット(electron版)](https://github.com/kujirahand/nadesiko3electron)
-  - [nadesiko3win32 - なでしこ3(コンソール版)のWindows配布パッケージ](https://github.com/kujirahand/nadesiko3win32/releases)
-- サーバーサイドJavaScriptエンジン用の実装
-  - [nadesiko3(Node.js)](https://github.com/kujirahand/nadesiko3)
-  - [nadesiko3(Deno)](https://github.com/kujirahand/nadesiko3deno)
-- 実験的に別言語で実装したなでしこ3
-  - [nadesiko3php - なでしこ3PHP](https://github.com/kujirahand/nadesiko3php)
-  - [nadesiko3rust - なでしこ3Rust](https://github.com/kujirahand/nadesiko3rust)
-  - [nadesiko3go - なでしこ3Go言語](https://github.com/kujirahand/nadesiko3go)
-  - [nadesiko3core](https://github.com/kujirahand/nadesiko3core/) --- 言語コアのみ取り出したもの
+curl -fsSL [https://raw.githubusercontent.com/rabbit-hand/nadesiko3ai/main/install.sh](https://raw.githubusercontent.com/rabbit-hand/nadesiko3ai/main/install.sh) | bash
