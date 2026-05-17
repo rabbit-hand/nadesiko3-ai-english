@@ -2,6 +2,21 @@ import { TokenType } from './nako_token.mjs'
 
 /** 予約語 */
 const reserved: Map<string, TokenType> = new Map([
+  // === 完全英語版キーワード ===
+  ['if', 'もし'],
+  ['koko', 'ここまで'],
+  ['end', 'ここまで'],
+  ['else', '違えば'],
+  ['while', '間'],
+  ['each', '反復'],
+  ['return', '戻る'],
+  ['break', '抜'],
+  ['continue', '続'],
+  ['let', '変数'],
+  ['const', '定数'],
+  ['function', '関数'],
+
+  // === オリジナル日本語版キーワード（完全互換） ===
   ['もし', 'もし'],
   ['回', '回'],
   ['回繰返', '回'], // (#924)
@@ -41,4 +56,14 @@ const reserved: Map<string, TokenType> = new Map([
   ['モジュール公開既定値', 'モジュール公開既定値'],
   ['厳チェック', '厳チェック'] // 厳しくチェック (#1698)
 ])
+
+/**
+ * トークンタイプが予約語（制御構文）であるか確認
+ * @param word 
+ */
+export function getReservedWordType (word: string): TokenType | undefined {
+  return reserved.get(word)
+}
+
+// デフォルトエクスポートも維持
 export default reserved
