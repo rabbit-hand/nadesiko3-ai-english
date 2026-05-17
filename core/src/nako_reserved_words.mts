@@ -8,13 +8,19 @@ const reserved: Map<string, TokenType> = new Map([
   ['end', 'ここまで'],
   ['else', '違えば'],
   ['while', '間'],
-  ['each', '反復'],
+  ['each', '反防'],
   ['return', '戻る'],
   ['break', '抜'],
   ['continue', '続'],
   ['let', '変数'],
   ['const', '定数'],
   ['function', '関数'],
+
+  // === 画面出力（標準・ショートカット・子供向け表現のすべてに対応） ===
+  ['print', '表示'],
+  ['to_print', '表示'],
+  ['p', '表示'],
+  ['say', '表示'],
 
   // === オリジナル日本語版キーワード（完全互換） ===
   ['もし', 'もし'],
@@ -59,7 +65,7 @@ const reserved: Map<string, TokenType> = new Map([
 
 /**
  * トークンタイプが予約語（制御構文）であるか確認
- * @param word 
+ * @param word
  */
 export function getReservedWordType (word: string): TokenType | undefined {
   return reserved.get(word)
