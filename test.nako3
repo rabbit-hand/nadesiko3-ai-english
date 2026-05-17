@@ -1,0 +1,19 @@
+# --- Nadesiko3 AI English Edition Test ---
+
+# 1. 英語の変数宣言（let）
+let AirConditionerStatus = 0
+
+# 2. 英語の条件分岐（if / else）と 独自エンド（koko）の実験
+if AirConditionerStatus == 0 then
+    # 英語の命令っぽく関数を呼び出す（※本来は関数側も英語名にする必要があります）
+    「エアコンをONにしました！」と表示。
+else
+    「エアコンはすでに動いています。」と表示。
+koko  # <--- ここに注目！「koko」でブロックを閉じます！
+
+# 3. 英語の繰り返し構文（while）の実験
+let count = 1
+while count <= 3
+    「Loop: 」 & count と表示。
+    count = count + 1
+koko
