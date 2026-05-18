@@ -10,4 +10,4 @@ To prevent unauthorized or spoofed "rogue devices" from hijacking your swarm net
 
 ### Syntax Example
 ```nadesiko
-「Drone_Alpha」を「Recon」の「HARDENED_ACCESS_TOKEN_DO_NOT_SHARE」で群エージェント登録。
+"Drone_Alpha" with "Recon" and "HARDENED_ACCESS_TOKEN_DO_NOT_SHARE" secure_register.
