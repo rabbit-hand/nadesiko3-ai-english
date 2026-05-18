@@ -10,7 +10,7 @@ This repository is an unofficial, powerful AI and automation-focused distributio
 
 ## 🌾 What is "Nadesiko3"? (Acknowledgment & Credits)
 
-"Nadesiko3" is a wonderful, open-source Japanese-based programming language developed by **Mr. クジラ飛行机 (Syunpei Kujira)**. Built on a solid foundation of JavaScript and TypeScript, it allows users to write programs that run smoothly across various environments, including PCs, smartphones, and tablets. Its natural Japanese syntax makes programming highly accessible, intuitive, and enjoyable for beginners while remaining highly efficient for automation and batch processing.
+"Nadesiko3" is a wonderful, open-source Japanese-based programming language developed by **Mr. クジラ飛行机 **. Built on a solid foundation of JavaScript and TypeScript, it allows users to write programs that run smoothly across various environments, including PCs, smartphones, and tablets. Its natural Japanese syntax makes programming highly accessible, intuitive, and enjoyable for beginners while remaining highly efficient for automation and batch processing.
 
 Please note that this project is an unofficial extension. The entire codebase is built upon the incredible ecosystem of the original [Japanese Programming Language Nadesiko](https://nadesi.com/). To experience the true power and the latest official updates of the language, we highly recommend visiting the [Official Nadesiko Website](https://nadesi.com/) and exploring the official [Tutorial](https://www.google.com/search?q=https://nadesi.com/v3/doc/index.php%3F%25E3%2583%2581%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25AA%25E3%2582%25A2%25E3%2583%25AB).
 
