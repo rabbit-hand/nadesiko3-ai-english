@@ -1,33 +1,22 @@
-// Lexer string tokenizer logic to detect [] as a valid string literal
+import assert from 'assert'
+import { NakoLexer } from '../src/nako_lexer.mjs'
 
-function stringTokenizer(code, index) {
-  // Check if the current character starts with '['
-  if (code[index] === '[') {
-    let result = ''
-    let i = index + 1
-    let escaped = false
+describe('Lexer Bracket String Test', () => {
+  // Initialize the Nadesiko Lexer
+  const lex = new NakoLexer()
 
-    while (i < code.length) {
-      const char = code[i]
+  // --- Test case for tokenizing [] as a string literal ---
+  it('should tokenize bracket [] as a valid string literal', () => {
+    // 1. Basic assignment test
+    const a = lex.tokenize('A=[server_logs.csv]', 0, 'test.nako3')
+    // Check if it's correctly split into word(A) | eq(=) | string(server_logs.csv)
+    assert.strictEqual(NakoLexer.tokensToTypeStr(a, '|'), 'word|eq|string')
+    assert.strictEqual(a[2].value, 'server_logs.csv')
 
-      if (escaped) {
-        result += char
-        escaped = false
-      } else if (char === '\\') {
-        escaped = true
-      } else if (char === ']') {
-        // String literal ends when the closing bracket ']' is found
-        return {
-          value: result,
-          nextIndex: i + 1
-        }
-      } else {
-        result += char
-      }
-      i++
-    }
-    throw new Error("Closing bracket ']' not found.")
-  }
-  
-  return null // Return null if it doesn't start with '[' to fall back to default tokenizers ("" or 「」)
-}
+    // 2. English command syntax test
+    const b = lex.tokenize('Switch camera to [bottom]', 0, 'test.nako3')
+    // Check if it parses as word(Switch) | word(camera) | word(to) | string(bottom)
+    assert.strictEqual(NakoLexer.tokensToTypeStr(b, '|'), 'word|word|word|string')
+    assert.strictEqual(b[3].value, 'bottom')
+  })
+})
