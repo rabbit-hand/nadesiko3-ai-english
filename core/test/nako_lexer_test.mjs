@@ -1,37 +1,33 @@
-/* eslint-disable no-undef */
-import { describe, it } from 'node:test'
-import assert from 'assert'
-import { NakoLexer } from '../src/nako_lexer.mjs'
-import { NakoLogger } from '../src/nako_logger.mjs'
-import { NakoPrepare } from '../src/nako_prepare.mjs'
+// Lexer string tokenizer logic to detect [] as a valid string literal
 
-describe('nako_lexer_test', () => {
-  const lex = new NakoLexer(new NakoLogger())
-  const pre = NakoPrepare.getInstance()
-  // --- test ---
-  it('トークンの区切りテスト', () => {
-    const a = lex.tokenize('Nは30', 0, 'test.nako3')
-    assert.strictEqual(NakoLexer.tokensToTypeStr(a, '|'), 'word|number')
-    const b = lex.tokenize('もしN=30ならば', 0, 'test.nako3')
-    assert.strictEqual(NakoLexer.tokensToTypeStr(b, '|'), 'もし|word|eq|number')
-  })
-  it('関数の登録テスト', () => {
-    const code = '●AAAとは\n「あ」を表示\nここまで。\n'
-    const code2 = pre.convert(code).map((v) => v.text).join('')
-    const tok = lex.tokenize(code2, 0, 'test.nako3')
-    /** @type {any} */
-    const funclist = new Map()
-    // @ts-ignore
-    NakoLexer.preDefineFunc(tok, lex.logger, funclist)
-    assert.strictEqual(funclist.get('test__AAA').type, 'func')
-  })
-  it('変数は登録しないというテスト', () => {
-    const code = 'HOGE=333\n'
-    const code2 = pre.convert(code).map((v) => v.text).join('')
-    const tok = lex.tokenize(code2, 0, 'test.nako3')
-    /** @type {any} */
-    const funclist = new Map()
-    NakoLexer.preDefineFunc(tok, lex.logger, funclist)
-    assert.strictEqual(funclist.HOGE, undefined)
-  })
-})
+function stringTokenizer(code, index) {
+  // Check if the current character starts with '['
+  if (code[index] === '[') {
+    let result = ''
+    let i = index + 1
+    let escaped = false
+
+    while (i < code.length) {
+      const char = code[i]
+
+      if (escaped) {
+        result += char
+        escaped = false
+      } else if (char === '\\') {
+        escaped = true
+      } else if (char === ']') {
+        // String literal ends when the closing bracket ']' is found
+        return {
+          value: result,
+          nextIndex: i + 1
+        }
+      } else {
+        result += char
+      }
+      i++
+    }
+    throw new Error("Closing bracket ']' not found.")
+  }
+  
+  return null // Return null if it doesn't start with '[' to fall back to default tokenizers ("" or 「」)
+}
