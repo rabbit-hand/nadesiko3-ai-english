@@ -1,98 +1,63 @@
-# 多言語対応・子供向け簡単言語デモ
-# Multilingual and Kid-Friendly Programming Demo
+# =========================================================
+# Nadesiko3 AI-English Edition: Global Capability Demo
+# =========================================================
 
-「=== 多言語対応なでしこ3 デモ ===」と表示
+# === Multilingual Nadesiko3 Demo ===
+Print [=== Multilingual Nadesiko3 Demo ===]
 
-# === 日本語モード ===
-「--- 日本語モード ---」と表示
-「言語モード設定」に「japanese」
-「こんにちは世界！」と表示
-「計算」で「1+1」
+# === Japanese Mode ===
+Print [--- Japanese Mode ---]
+[Set language mode] to [japanese]
+Print [Hello World!]
+[Calculate] [1+1]
 
 # === English Mode ===
-「--- English Mode ---」と表示
-「言語モード設定」に「english」
-PRINT "Hello World!"
-CALCULATE "2+2"
+Print [--- English Mode ---]
+[Set language mode] to [english]
+PRINT [Hello World!]
+CALCULATE [2+2]
 ADD 5 and 3
 MULTIPLY 4 by 6
 
-# === かんたんモード (Kid Mode) ===
-「--- かんたんモード ---」と表示
-「かんたんモード」
+# === Kid Mode (English) ===
+Print [--- Kid Mode ---]
+[Kid Mode]
 
-# 挨拶
-「おはよう」と表示
-「こんにちは」と表示
-「こんばんは」と表示
-「おやすみ」と表示
+# Greetings
+Print [Good Morning]
+Print [Hello]
+Print [Good Night]
 
-# 動物の鳴き声
-「わんわん」と表示
-「にゃんにゃん」と表示
-「ぴよぴよ」と表示
-「ぽっぽ」と表示
+# Animal Sounds
+Print [Woof Woof]
+Print [Meow Meow]
+Print [Chirp Chirp]
+Print [Choo Choo]
 
-# 数字あそび
-「かずあそび」5と3
-「たしざん」10と7
-「ひきざん」15から8
-「かけざん」6かける4
+# Math Games
+[Number Game] 7 and 5
+[Add] 10 and 3
+[Subtract] 15 from 8
+[Multiply] 6 by 4
 
-# 音楽あそび
-「おんがく」を「ド」
-「おんがく」を「レ」
-「おんがく」を「ミ」
+# Music
+[Music] note [C]
+[Music] note [D]
+[Music] note [E]
 
-# くじびきあそび
-「えらんで」から「リンゴ、ミカン、ブドウ」
-「くじびき」を「犬、猫、うさぎ、ハムスター」
+# Games & Storytelling
+[Pick] from [Apple, Orange, Grape]
+[Draw] [Rainbow Sun]
+[Tell story] [Once upon a time, there was Nadesiko...]
 
-# 性別あそび
-「おとこずき」と表示
-「おんなずき」と表示
+# === Automatic Language Detection ===
+Print [--- Auto Detect Language ---]
+[AUTO_DETECT_LANGUAGE]
 
-# ことばあそび
-「ことばあそび」を「なでしこ」
-「ふくふく」を「AI魔改造品」
+# === Help ===
+Print [--- Help ---]
+[Help]
 
-# ものがたり
-「ものがたり」を「むかしむかし、あるところに、なでしこさんがいました」
-
-# おえかき
-「おえかき」を「にじ色のたいよう」
-
-# あそぼう
-「あそぼう」を「かくれんぼ」
-
-# === English Kid Mode ===
-「--- English Kid Mode ---」と表示
-「言語モード設定」に「english」
-
-HELLO
-GOOD_MORNING
-GOOD_NIGHT
-
-DOG_BARK
-CAT_MEOW
-CHIRP_CHIRP
-TRAIN_CHOO
-
-NUMBER_GAME 7 and 5
-ADD_NUMBERS 10 and 3
-PLAY_MUSIC note "ド"
-PICK_RANDOM from ["Apple", "Orange", "Grape"]
-DRAW_PICTURE "Rainbow Sun"
-LET'S_PLAY with "Hide and Seek"
-TELL_STORY "Once upon a time, there was Nadesiko..."
-
-# === 自動言語判定 ===
-「--- 自動言語判定 ---」と表示
-「AUTO_DETECT_LANGUAGE」
-
-# === ヘルプ表示 ===
-「--- ヘルプ ---」と表示
-「ヘルプ」と表示
-
-「=== デモ完了 ===」と表示
-「🌍 多言語対応なでしこ3で、世界中の子供たちが楽しくプログラミング！🎈」と表示
+# === Demo Completed ===
+Print [=== Demo Completed ===]
+Print [🌍 Programming for the world with Nadesiko3! 🎈]
