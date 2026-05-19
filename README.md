@@ -2,12 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rabbit-hand/nadesiko3-ai-english/blob/main/LICENSE)
 
-> ⚠️ **Work in Progress:** > This project is currently under active development. While the English syntax core is operational, you may find remaining Japanese text in some documentation or internal logs. We are working hard to make this fully international. Contributions, bug reports, and feedback from the global community are highly welcomed!
-
----
+> ⚠️ **Work in Progress & Unofficial Distribution:**
+> This project is an **unofficial English-syntax distribution** of "Nadesiko3," currently under active development. While the core English syntax is operational, you may find some Japanese text in documentation or internal logs. We are working hard to make this project fully international. Contributions, bug reports, and feedback from the global community are highly welcomed!
 
 💡 **For International Developers:**
-This repository is a high-performance distribution of "Nadesiko3," **fully optimized for English syntax.** You can write code, perform complex data science tasks, and control hardware entirely in English using `[]` notation.
+This repository provides a high-performance version of "Nadesiko3," **fully optimized for English syntax.** By using the English notation, you can write code, perform complex data science tasks, and control hardware entirely in English using `[]` notation.
 
 ## 🚀 Quick Start (English Syntax)
 
