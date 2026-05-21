@@ -78,7 +78,7 @@ fi
 echo "🧪 Testing installation..."
 if command -v nako3-ai &> /dev/null; then
     echo "✅ nako3-ai command is available"
-    nako3-ai -e "「こんにちは、なでしこ3 AI Enhanced！😊」と表示"
+    nako3-ai -e "「Hello, Nadesiko3 AI Enhanced! 😊」と表示"
 else
     echo "⚠️  nako3-ai command not found in PATH. You may need to restart your shell."
 fi

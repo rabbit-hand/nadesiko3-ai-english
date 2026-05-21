@@ -1,4 +1,4 @@
-# ドキュメント自動生成とデプロイメント
+# Documentation generation and deployment
 
 name: Documentation Generation and Deployment
 
@@ -50,122 +50,122 @@ jobs:
           
           # Generate detailed API docs
           cat > docs/datascience/README.md << 'EOF'
-          # なでしこ3 データサイエンス機能
+          # Nadesiko3 Data Science Features
           
-          ## 概要
+          ## Overview
           
-          このドキュメントでは、なでしこ3に追加されたデータサイエンス機能について詳しく説明します。
-          PythonのNumPy、Pandas、Scikit-Learnのような機能を日本語で利用できます。
+          This document explains the data science features added to Nadesiko3.
+          It provides Python-like NumPy, Pandas, and Scikit-Learn capabilities for Japanese programming.
           
-          ## プラグイン一覧
+          ## Plugin overview
           
-          ### 1. plugin_datascience.mjs - データ処理
+          ### 1. plugin_datascience.mjs - Data processing
           
-          #### 配列操作
+          #### Array operations
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`配列作成(サイズ, 値)\` | 指定サイズの配列を作成 | \`5の0で配列作成\` |
-          | \`ゼロ配列(サイズ)\` | ゼロで初期化された配列 | \`3のゼロ配列\` |
-          | \`1配列(サイズ)\` | 1で初期化された配列 | \`4の1配列\` |
-          | \`範囲配列(開始, 終了)\` | 指定範囲の数値配列 | \`1から5まで範囲配列\` |
-          | \`配列形状(配列)\` | 配列の形状を取得 | \`[1,2,3]の配列形状\` |
-          | \`配列リサイズ(配列, サイズ)\` | 配列のサイズ変更 | \`[1,2]を5に配列リサイズ\` |
-          | \`配列連結(配列1, 配列2)\` | 配列の結合 | \`[1,2]と[3,4]を配列連結\` |
+          | \`配列作成(サイズ, 値)\` | Create an array with a specified size | \`5の0で配列作成\` |
+          | \`ゼロ配列(サイズ)\` | Create an array initialized with zeros | \`3のゼロ配列\` |
+          | \`1配列(サイズ)\` | Create an array initialized with ones | \`4の1配列\` |
+          | \`範囲配列(開始, 終了)\` | Create a ranged numerical array | \`1から5まで範囲配列\` |
+          | \`配列形状(配列)\` | Get the shape of an array | \`[1,2,3]の配列形状\` |
+          | \`配列リサイズ(配列, サイズ)\` | Resize an array | \`[1,2]を5に配列リサイズ\` |
+          | \`配列連結(配列1, 配列2)\` | Concatenate arrays | \`[1,2]と[3,4]を配列連結\` |
           
-          #### 数学関数
+          #### Math functions
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`合計(配列)\` | 配列の合計値 | \`[1,2,3]の合計\` |
-          | \`平均(配列)\` | 配列の平均値 | \`[1,2,3]の平均\` |
-          | \`最大値(配列)\` | 配列の最大値 | \`[1,2,3]の最大値\` |
-          | \`最小値(配列)\` | 配列の最小値 | \`[1,2,3]の最小値\` |
-          | \`標準偏差(配列)\` | 標準偏差の計算 | \`[1,2,3]の標準偏差\` |
-          | \`分散(配列)\` | 分散の計算 | \`[1,2,3]の分散\` |
-          | \`配列要素積(配列)\` | 配列要素の積 | \`[1,2,3]の配列要素積\` |
-          | \`配列累積和(配列)\` | 累積和の計算 | \`[1,2,3]の配列累積和\` |
+          | \`合計(配列)\` | Sum the values in an array | \`[1,2,3]の合計\` |
+          | \`平均(配列)\` | Calculate the average of an array | \`[1,2,3]の平均\` |
+          | \`最大値(配列)\` | Get the maximum value in an array | \`[1,2,3]の最大値\` |
+          | \`最小値(配列)\` | Get the minimum value in an array | \`[1,2,3]の最小値\` |
+          | \`標準偏差(配列)\` | Calculate standard deviation | \`[1,2,3]の標準偏差\` |
+          | \`分散(配列)\` | Calculate variance | \`[1,2,3]の分散\` |
+          | \`配列要素積(配列)\` | Multiply elements in an array | \`[1,2,3]の配列要素積\` |
+          | \`配列累積和(配列)\` | Compute the cumulative sum | \`[1,2,3]の配列累積和\` |
           
-          #### 統計関数
+          #### Statistical functions
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`中央値(配列)\` | 中央値の計算 | \`[1,2,3]の中央値\` |
-          | \`最頻値(配列)\` | 最頻値の計算 | \`[1,2,2,3]の最頻値\` |
-          | \`相関係数(配列1, 配列2)\` | 相関係数の計算 | \`XとYの相関係数\` |
+          | \`中央値(配列)\` | Calculate the median | \`[1,2,3]の中央値\` |
+          | \`最頻値(配列)\` | Calculate the mode | \`[1,2,2,3]の最頻値\` |
+          | \`相関係数(配列1, 配列2)\` | Calculate the correlation coefficient | \`XとYの相関係数\` |
           
-          ### 2. plugin_statistics.mjs - 統計分析
+          ### 2. plugin_statistics.mjs - Statistical analysis
           
-          #### 記述統計
+          #### Descriptive statistics
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`要約統計量(データ)\` | 基本統計量のまとめ | \`データの要約統計量\` |
+          | \`要約統計量(データ)\` | Summarize basic statistics | \`データの要約統計量\` |
           
-          #### 確率分布
+          #### Probability distributions
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`正規分布PDF(x, 平均, 標準偏差)\` | 正規分布の確率密度関数 | \`0で1の0で正規分布PDF\` |
-          | \`正規分布CDF(x, 平均, 標準偏差)\` | 正規分布の累積分布関数 | \`0で1の0で正規分布CDF\` |
+          | \`正規分布PDF(x, 平均, 標準偏差)\` | Normal distribution PDF | \`0で1の0で正規分布PDF\` |
+          | \`正規分布CDF(x, 平均, 標準偏差)\` | Normal distribution CDF | \`0で1の0で正規分布CDF\` |
           
-          #### 仮説検定
+          #### Hypothesis testing
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`t検定(標本1, 標本2)\` | t検定の実行 | \`AとBのt検定\` |
-          | \`カイ二乗検定(観測値, 期待値)\` | カイ二乗検定の実行 | \`観測と期待でカイ二乗検定\` |
+          | \`t検定(標本1, 標本2)\` | Perform a t-test | \`AとBのt検定\` |
+          | \`カイ二乗検定(観測値, 期待値)\` | Perform a chi-square test | \`観測と期待でカイ二乗検定\` |
           
-          #### 相関分析
+          #### Correlation analysis
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`ピアソン相関(X, Y)\` | ピアソンの相関係数 | \`XとYのピアソン相関\` |
-          | \`スピアマン相関(X, Y)\` | スピアマンの順位相関係数 | \`XとYのスピアマン相関\` |
+          | \`ピアソン相関(X, Y)\` | Pearson correlation coefficient | \`XとYのピアソン相関\` |
+          | \`スピアマン相関(X, Y)\` | Spearman rank correlation coefficient | \`XとYのスピアマン相関\` |
           
-          #### 回帰分析
+          #### Regression analysis
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`単回帰分析(X, Y)\` | 単回帰分析の実行 | \`XでYを単回帰分析\` |
+          | \`単回帰分析(X, Y)\` | Perform simple regression analysis | \`XでYを単回帰分析\` |
           
-          ### 3. plugin_machinelearning.mjs - 機械学習
+          ### 3. plugin_machinelearning.mjs - Machine learning
           
-          #### データ前処理
+          #### Data preprocessing
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`データ正規化(データ)\` | データの正規化（0-1範囲） | \`データをデータ正規化\` |
-          | \`データ標準化(データ)\` | データの標準化（平均0、分散1） | \`データをデータ標準化\` |
-          | \`訓練テスト分割(データ, 比率)\` | データを訓練用とテスト用に分割 | \`データを0.2で訓練テスト分割\` |
+          | \`データ正規化(データ)\` | Normalize data to the 0-1 range | \`データをデータ正規化\` |
+          | \`データ標準化(データ)\` | Standardize data to mean 0 and variance 1 | \`データをデータ標準化\` |
+          | \`訓練テスト分割(データ, 比率)\` | Split data into training and test sets | \`データを0.2で訓練テスト分割\` |
           
-          #### 教師あり学習
+          #### Supervised learning
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`線形回帰学習(X, Y)\` | 線形回帰モデルの学習 | \`XでYを線形回帰学習\` |
-          | \`線形回帰予測(モデル, X)\` | 線形回帰による予測 | \`モデルでXを線形回帰予測\` |
-          | \`K近傍法分類(訓練X, 訓練Y, テストX, K)\` | K近傍法による分類 | \`TXとTYでTXを3のK近傍法分類\` |
-          | \`決定木分類(特徴量, ラベル)\` | 単純な決定木による分類 | \`特徴量とラベルを決定木分類\` |
-          | \`パーセプトロン学習(特徴量, ラベル, 学習率, エポック)\` | 単純パーセプトロンの学習 | \`特徴量とラベルをパーセプトロン学習\` |
+          | \`線形回帰学習(X, Y)\` | Train a linear regression model | \`XでYを線形回帰学習\` |
+          | \`線形回帰予測(モデル, X)\` | Predict using linear regression | \`モデルでXを線形回帰予測\` |
+          | \`K近傍法分類(訓練X, 訓練Y, テストX, K)\` | Classify with K-nearest neighbors | \`TXとTYでTXを3のK近傍法分類\` |
+          | \`決定木分類(特徴量, ラベル)\` | Classify with a decision tree | \`特徴量とラベルを決定木分類\` |
+          | \`パーセプトロン学習(特徴量, ラベル, 学習率, エポック)\` | Train a perceptron | \`特徴量とラベルをパーセプトロン学習\` |
           
-          #### 教師なし学習
+          #### Unsupervised learning
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`K平均法クラスタリング(データ, K)\` | K平均法によるクラスタリング | \`データを3のK平均法クラスタリング\` |
+          | \`K平均法クラスタリング(データ, K)\` | Cluster data with K-means | \`データを3のK平均法クラスタリング\` |
           
-          #### 評価指標
+          #### Evaluation metrics
           
-          | 命令 | 説明 | 例 |
+          | Command | Description | Example |
           |------|------|-----|
-          | \`平均二乗誤差(実際, 予測)\` | MSEの計算 | \`実際と予測の平均二乗誤差\` |
-          | \`平均絶対誤差(実際, 予測)\` | MAEの計算 | \`実際と予測の平均絶対誤差\` |
-          | \`正解率(実際, 予測)\` | 分類の正解率 | \`実際と予測の正解率\` |
+          | \`平均二乗誤差(実際, 予測)\` | Calculate MSE | \`実際と予測の平均二乗誤差\` |
+          | \`平均絶対誤差(実際, 予測)\` | Calculate MAE | \`実際と予測の平均絶対誤差\` |
+          | \`正解率(実際, 予測)\` | Calculate classification accuracy | \`実際と予測の正解率\` |
           
-          ## 使用例
+          ## Examples
           
-          ### 基本的なデータ処理
+          ### Basic data processing
           
           \`\`\`nako3
           # データの作成と基本統計
@@ -181,7 +181,7 @@ jobs:
           「相関係数: {相関}」と表示
           \`\`\`
           
-          ### 機械学習
+          ### Machine learning
           
           \`\`\`nako3
           # 線形回帰
@@ -200,21 +200,21 @@ jobs:
           「平均二乗誤差: {MSE}」と表示
           \`\`\`
           
-          ## パフォーマンス特性
+          ## Performance characteristics
           
-          - 小規模データ（〜10,000要素）: 高速
-          - 中規模データ（10,000〜100,000要素）: 実用的
-          - 大規模データ（100,000要素以上）: 制限あり
+          - Small data (up to 10,000 elements): fast
+          - Medium data (10,000 to 100,000 elements): practical
+          - Large data (over 100,000 elements): limited
           
-          ## 注意事項
+          ## Notes
           
-          - 教育・学習用を目的としています
-          - 本格的なデータサイエンス用途にはPythonのライブラリを推奨
-          - パフォーマンスは最適化されていません
+          - Intended for education and learning
+          - For serious data science, use Python libraries
+          - Performance is not optimized
           
-          ## ライセンス
+          ## License
           
-          MIT License - なでしこ3プロジェクトと同じ
+          MIT License - same as the Nadesiko3 project
           EOF
           
           echo "✅ API documentation generated"
@@ -226,47 +226,47 @@ jobs:
           
           # Create examples index
           cat > docs/datascience/examples/README.md << 'EOF'
-          # データサイエンス機能の使用例
+          # Data Science Examples
           
-          ここでは、なでしこ3のデータサイエンス機能の具体的な使用例を紹介します。
+          This section shows usage examples for Nadesiko3 data science features.
           
-          ## 基本例
+          ## Basic examples
           
-          ### 1. 基本的な統計計算
+          ### 1. Basic statistical calculations
           
-          \`basic_stats.nako3\` を参照してください。
+          \`basic_stats.nako3\` refers to the sample.
           
-          ### 2. 相関分析
+          ### 2. Correlation analysis
           
-          \`correlation_analysis.nako3\` を参照してください。
+          \`correlation_analysis.nako3\` refers to the sample.
           
-          ### 3. 回帰分析
+          ### 3. Regression analysis
           
-          \`regression_analysis.nako3\` を参照してください。
+          \`regression_analysis.nako3\` refers to the sample.
           
-          ## 機械学習例
+          ## Machine learning examples
           
-          ### 1. 線形回帰
+          ### 1. Linear regression
           
-          \`linear_regression.nako3\` を参照してください。
+          \`linear_regression.nako3\` refers to the sample.
           
-          ### 2. 分類問題
+          ### 2. Classification problems
           
-          \`classification.nako3\` を参照してください。
+          \`classification.nako3\` refers to the sample.
           
-          ### 3. クラスタリング
+          ### 3. Clustering
           
-          \`clustering.nako3\` を参照してください。
+          \`clustering.nako3\` refers to the sample.
           
-          ## 応用例
+          ## Advanced examples
           
-          ### 1. 学生成績分析
+          ### 1. Student grade analysis
           
-          \`student_analysis.nako3\` を参照してください。
+          \`student_analysis.nako3\` refers to the sample.
           
-          ### 2. 株価データ分析
+          ### 2. Stock data analysis
           
-          \`stock_analysis.nako3\` を参照してください。
+          \`stock_analysis.nako3\` refers to the sample.
           
           EOF
           
@@ -381,8 +381,8 @@ jobs:
           }
           
           // Generate markdown report
-          let markdown = '# パフォーマンスベンチマーク\\n\\n';
-          markdown += '| データサイズ | 平均計算(ms) | 相関計算(ms) | 回帰分析(ms) |\\n';
+          let markdown = '# Performance Benchmarks\\n\\n';
+          markdown += '| Data size | Mean calculation (ms) | Correlation calculation (ms) | Regression analysis (ms) |\\n';
           markdown += '|-------------|-------------|-------------|-------------|\\n';
           
           for (const size of [100, 1000, 10000]) {
@@ -393,10 +393,10 @@ jobs:
             markdown += \`| \${size} | \${meanTime} | \${corrTime} | \${regTime} |\\n\`;
           }
           
-          markdown += '\\n## テスト環境\\n';
+          markdown += '\\n## Test environment\\n';
           markdown += '- OS: Ubuntu Latest\\n';
           markdown += '- Node.js: ' + process.version + '\\n';
-          markdown += '- 日時: ' + new Date().toISOString() + '\\n';
+          markdown += '- Timestamp: ' + new Date().toISOString() + '\\n';
           
           require('fs').writeFileSync('docs/datascience/performance/benchmarks.md', markdown);
           console.log('Performance benchmarks completed');
