@@ -1,43 +1,33 @@
 # Nadesiko3 - Unofficial English Distribution
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rabbit-hand/nadesiko3-unofficial-english/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-> ⚠️ **Important Notice: Unofficial & Work in Progress**
-> This repository is an **unofficial English-syntax distribution** of the Japanese programming language "Nadesiko3." 
-> 
-> **Please Note:** As this project is currently under active development, you may encounter Japanese text in internal logs, system error messages, or older documentation. We are working hard to achieve 100% internationalization. If you find any untranslated parts, please report them via our [Issue tracker](https://github.com/rabbit-hand/nadesiko3-unofficial-english/issues).
+*⚠️ **Notice:** This is an unofficial English-syntax distribution of the Japanese programming language "Nadesiko3." As it is under active development, some internal logs or error messages may still be in Japanese. We are actively working on full internationalization.*
 
 ---
 
 ## 💡 Overview
-This project provides a specialized version of "Nadesiko3," **fully optimized for English syntax.** It aims to provide a "friction-free" environment where international developers can write code, perform complex data science tasks, and control hardware hardware (such as drones) using intuitive English commands.
+
+**Nadesiko3 English** provides a specialized environment where you can write code, handle complex data science tasks, and control hardware (such as drones) using **intuitive, friction-free English commands.** By utilizing `[]` brackets as stable token delimiters, it eliminates common quote-escaping issues, offering a cleaner coding experience for international developers.
 
 ## 🚀 Key Features
-- **Friction-Free Syntax:** Utilizing `[]` notation as stable token delimiters to prevent quote-escaping issues.
-- **Security-First Swarm Logic:** Built-in HMAC-SHA256 signature verification for authenticated command execution in IoT/Drone environments.
-- **AI & Data Science Ready:** Native support for matrix calculations and statistical modeling in plain English.
-- **Lightweight STEM Education:** Includes a "Kid Mode" for simplified learning environments.
 
-## 💻 Quick Start (English Syntax)
+* **Friction-Free Syntax:** Designed for readability and ease of use.
+* **Security-First Logic:** Built-in HMAC-SHA256 signature verification for secure IoT/Drone operations.
+* **AI & Data Science Ready:** Native support for matrix calculations and statistical modeling.
+* **Versatile:** Lightweight and efficient, perfect for everything from STEM education to professional automation.
 
-```nako3
-# Example: Secure Swarm Registration
-[Drone_Alpha] register as [Recon] with [HARDENED_ACCESS_TOKEN_DO_NOT_SHARE].
+---
 
-# Example: Authenticated Broadcast
-[Takeoff] command to [Altitude_50m] at [1779184536000] with [a6f671b5...signature...].
+## 🚀 Getting Started
 
-# Example: Data Science
-[Calculate] [2+2].
+You can install Nadesiko3 English via Node.js (npm).
 
-### 🚀 Getting Started
+### 1. Prerequisites
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-To start using Nadesiko3 English, you can install it via Node.js (npm).
+### 2. Installation
+Run the following command in your terminal:
 
-1. **Prerequisites**
-   Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
-
-2. **Installation**
-   Run the following command in your terminal:
-   ```bash
-   npm install -g nadesiko3-unofficial-english
+```bash
+npm install -g nadesiko3-unofficial-english
