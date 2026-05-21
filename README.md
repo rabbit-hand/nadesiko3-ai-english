@@ -29,3 +29,15 @@ This project provides a specialized version of "Nadesiko3," **fully optimized fo
 
 # Example: Data Science
 [Calculate] [2+2].
+
+### 🚀 Getting Started
+
+To start using Nadesiko3 English, you can install it via Node.js (npm).
+
+1. **Prerequisites**
+   Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+2. **Installation**
+   Run the following command in your terminal:
+   ```bash
+   npm install -g nadesiko3-unofficial-english
